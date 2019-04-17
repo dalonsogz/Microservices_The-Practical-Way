@@ -2,7 +2,8 @@
 
 ![Front](./assets/front.jpg "Book front")
 ![Back](./assets/back.jpg "Book front")
-######[book sources](https://github.com/microservices-practical)
+
+[book sources](https://github.com/microservices-practical)
 
 ## About the book
 
