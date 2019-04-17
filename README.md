@@ -19,7 +19,7 @@ Author Moises Macero follows a very pragmatic approach to explain the benefits o
 - Master service discovery with Eureka and load balancing with Ribbon
 - Route requests with Zuul as your API gateway
 - Write end-to-end rests for an event-driven architecture using Cucumber
-- Carry out continuous integration and deployment-
+- Carry out continuous integration and deployment
 
 **Who This Book Is For**
 
