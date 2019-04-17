@@ -6,20 +6,18 @@ import lombok.RequiredArgsConstructor;
 import lombok.ToString;
 
 /**
- * This class represents a Multiplication (a * b).
+ * Stores information to identify the user.
  */
 @RequiredArgsConstructor
 @Getter
 @ToString
 @EqualsAndHashCode
-public final class Multiplication {
+public final class User {
 
-    // Both factors
-    private final int factorA;
-    private final int factorB;
+    private final String alias;
 
     // Empty constructor for JSON (de)serialization
-    Multiplication() {
-        this(0, 0);
+    protected User() {
+        alias = null;
     }
 }
