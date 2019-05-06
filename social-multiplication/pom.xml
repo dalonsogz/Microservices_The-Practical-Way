@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>microservices.book</groupId>
-	<artifactId>social-multiplication-v3</artifactId>
-	<version>0.3.0-SNAPSHOT</version>
+	<artifactId>social-multiplication</artifactId>
+	<version>0.4.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>social-multiplication-v3</name>
+	<name>social-multiplication</name>
 	<description>Social Multiplication App (Learn Microservices with Spring Boot)</description>
 
 	<parent>
