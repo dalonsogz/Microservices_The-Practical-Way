@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -60,7 +61,9 @@ public class GameServiceImplTest {
 		// this repository will return the just-won score card
 		given(scoreCardRepository.findByUserIdOrderByScoreTimestampDesc(userId)).willReturn(Collections.singletonList(scoreCard));
 		given(badgeCardRepository.findByUserIdOrderByBadgeTimestampDesc(userId)).willReturn(Collections.emptyList());
-		given(gameService.newAttemptForUser(userId, attemptId, true)).willReturn(new GameStats());
+		ArrayList<Badge> badges = new ArrayList<>();
+		badges.add(Badge.FIRST_WON);
+		given(gameService.newAttemptForUser(userId, attemptId, true)).willReturn(new GameStats(userId,totalScore,badges));
 		
 		// when
 		GameStats iteration = gameService.newAttemptForUser(userId, attemptId, true);
